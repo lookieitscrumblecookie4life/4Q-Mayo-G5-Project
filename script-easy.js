@@ -52,9 +52,6 @@ const initializePage = () => {
     if (highScore !== null) {
       scoreDisplay.classList.remove("hide");
       scoreDisplay.innerHTML = `<span>"Your highest score is... </span> ${highScore} moves! That's some sweet and sticky success, pal!"`;
-    } else {
-      scoreDisplay.classList.remove("hide");
-      scoreDisplay.innerHTML = `<span>"You haven't stacked any jars yet—but the pantry's waiting, champ!"</span>`;
     }
   }
 };
