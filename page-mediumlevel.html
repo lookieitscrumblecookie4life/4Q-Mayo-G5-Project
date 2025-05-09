@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Good Pastry, Great Pastry</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Group 5">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="revised" content="05-02-2025">
+    
+    <link rel="icon" href="images/logo.png" type="image">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mediumlevel.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick+Hand">
+  </head>
+  <body class="mediumlevelpage">
+    <audio autoplay loop preload="auto">
+      <source src="bgm2.mp3" type="audio/mp3">
+    </audio>
+  
+    <a href="page-levels.html"><img class="arrow-levels" src="images/sticker-arrow.png"></a>
+
+    <img class="mediumguypage" src="images/sticker-mediumguy-uncropped.png">
+
+    <img class="messagebox-start-medium"  src="images/sticker-messagebox.png">
+
+    <h2 class="mediumlvlmessage">Darling, this isn’t a picnic—it’s gourmet toast. Use that brain or get burned. You’ve got 1 minute and 15 seconds. Click the start button… if you can handle it.</h2>
+   
+    <section class="wrapper"> 
+        <img id="mediumbg" class="hide medium-game-bg" src="images/bg-medium.png">
+        <div class="wrapper-game">
+            <div class="stats-container">
+                <div id="moves-count"></div>
+                <div id="time"></div>
+            </div>
+            <div class="game-container"></div>
+            <button id="stop" class="hide button-stop-medium"><img src="images/button-stop.png"></button>
+        </div>
+        <div class="controls-container">
+            <p id="result"></p>
+            <button id="start" class="button-start-medium"><img src="images/button-start.png"></button>
+        </div>
+    </section>
+    
+    <script src="script-medium.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Good Pastry, Great Pastry</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Group 5">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="revised" content="05-02-2025">
+        
+        <link rel="icon" href="logo.png" type="image">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick+Hand">
+    </head>
+    <body class="loginpage">
+        <audio autoplay loop preload="auto">
+            <source src="bgm.mp3" type="audio/mp3">
+        </audio>
+
+        <img class="loginbox" src="images/sticker-loginbox.png">
+
+        <section class="login-textwrapper">
+            <p id="login-wrapper"></p>
+            <form onsubmit="event.preventDefault(); saveUsername(); return false;">
+                <label for="usernamebox" id="username">username</label> 
+                <br>
+                <input type="text" id="usernamebox" name="usernamebox" required oninput="checkValidUser()"> 
+                <br>
+                <p id="updateUser"></p>
+                <button type="submit" id="submitbutton" disabled>
+                    <img src="images/button-submit.png">
+                </button>
+        </section>
+
+        <script src="storage.js"></script>
+    </body>
+</html>

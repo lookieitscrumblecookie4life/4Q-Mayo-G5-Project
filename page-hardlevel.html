@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Good Pastry, Great Pastry</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Group 5">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="revised" content="05-02-2025">
+        
+        <link rel="icon" href="logo.png" type="image">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="hardlevel.css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick+Hand">
+    </head>
+    <body class="hardlevelpage">
+        <audio autoplay loop preload="auto">
+            <source src="bgm2.mp3" type="audio/mp3">
+        </audio>
+
+        <a href="page-levels.html"><img class="arrow-levels" src="images/sticker-arrow.png"></a>
+
+        <img class="hardguypage" src="images/sticker-hardguy-uncropped.png">
+
+        <img class="messagebox-start-hard"  src="images/sticker-messagebox.png">
+
+        <h2 class="hardlvlmessage">1 minute and 30 seconds. Croffles. Perfection. If you can’t handle the heat, step away from my oven. Click start and prove you're not all talk!</h2>
+        
+        <section class="wrapper"> 
+            <img id="hardbg" class="hide hard-game-bg" src="images/bg-hard.png">
+            <div class="wrapper-game">
+                <div class="stats-container">
+                    <div id="moves-count"></div>
+                    <div id="time"></div>
+                </div>
+                <div class="game-container"></div>
+                <button id="stop" class="hide button-stop-hard"><img src="images/button-stop.png"></button>
+            </div>
+            <div class="controls-container">
+                <p id="result"></p>
+                <button id="start" class="button-start-hard"><img src="images/button-start.png"></button>
+            </div>
+        </section>
+    
+        <script src="script-hard.js"></script>
+    </body>
+</html>

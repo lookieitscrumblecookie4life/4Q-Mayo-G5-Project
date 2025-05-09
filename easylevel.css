@@ -1,0 +1,238 @@
+.easylevelpage {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', sans-serif;
+    color: #722f10;
+}
+
+span {
+    font-size: 23px;
+}
+
+.wrapper-game {
+  box-sizing: content-box;
+  width: 26.87em;
+  padding: 2.5em 3em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  margin-left: 0;
+}
+
+.wrapper-game {
+    margin-top: -25px;
+}
+
+.easy-game-bg {
+    position: fixed; /* Stick it to the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; /* Keep it behind everything */
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    gap: 0.6em;
+}
+
+.stats-container {
+    text-align: right;
+    margin-bottom: 30px;
+    margin-right: 13px;
+    position: relative;
+}
+
+.stats-container span {
+    font-weight: 600;
+}
+
+.card-container {
+    position: relative;
+    width: 6.25em;
+    height: 6.25em;
+    cursor: pointer;
+}
+
+.card-before, .card-after {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1.2s ease-out;
+    backface-visibility: hidden;
+}
+
+.card-before {
+    background: none;
+    font-size: 2.8em;
+    font-weight: 600;
+}
+
+.card-before:hover {
+    filter: drop-shadow(0px 2.5px 2.5px #722f10);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.card-after {
+    background: none;
+    transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-before {
+    transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-after {
+    transform: rotateY(0deg);
+}
+
+#stop {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 auto;
+    height: auto;
+    cursor: pointer;
+    margin-left: 110px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+#stop img {
+    width: 65%;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+#start {
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    cursor: pointer;
+    animation: pulse 1.5s ease-in-out infinite;
+    z-index: 100;
+}
+  
+#start img {
+    width: 12.5%;
+    height: auto;
+    display: block;
+    z-index: 100;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.controls-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.controls-container button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.jar-mystery {
+    width: 100%;
+}
+
+.image {
+    width: 100%
+}
+
+.hide {
+    display: none;
+}
+
+#result h2 {
+    z-index: 6;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: -535px;
+    margin-left: 500px;
+    margin-right: -80px;
+    text-align: left;
+    font-family: 'Patrick Hand', sans-serif;
+}
+
+#game-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: url(images/bg-preset.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.message-content {
+    text-align: center;
+    position: relative; /* Needed for absolute positioning of children */
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.button-goback {
+    width: 14.5%;
+    animation: pulse 2s ease-in-out infinite;
+    cursor: pointer;
+    position: absolute;
+    top: 118%;
+    left: 60.5%;
+    z-index: 100;
+} 
+
+.button-goback-levels {
+    width: 14.5%;
+    animation: pulse 2s ease-in-out infinite;
+    cursor: pointer;
+    position: absolute;
+    top: 118%;
+    left: 60.5%;
+    z-index: 100;
+}
+
+.easyguypage2 {
+    width: 29%;
+    margin-top: 272px;
+    margin-left: -200px;
+    transform: translateX(-50%) translateY(100%);
+    animation: popup 1s forwards;
+    z-index: 100;
+}
+
+@keyframes popup {
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}

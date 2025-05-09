@@ -1,0 +1,1301 @@
+/* PAGE-HOME */
+.homepage {
+    background-image: url("images/bg-homepage.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    width: 100%;
+    padding-top: 15px;
+    animation: pulse 1.5s ease-in-out infinite;
+    filter: drop-shadow(0px 7px 7px black);
+}
+
+@keyframes pulse {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.03);}
+    100%{transform: scale(1);}
+}
+
+.button-login, .button-submit {
+    width: 13%;
+    height: 13%;
+    margin-top: 9.5%;
+    margin-left: 35%;
+    cursor: pointer;
+}
+
+.button-info {
+    width: 13%;
+    height: 13%;
+    margin-top: 9.5%;
+    margin-left: 35%;
+    cursor: help;
+}
+
+.button-info {
+    margin-left: 50px;
+}
+
+.button-login {
+    width: 13.15%;
+}
+
+.button-login:hover {
+    filter: drop-shadow(0px 7px 7px #f9924a);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.button-info:hover {
+    filter: drop-shadow(0px 7px 7px #ecfb90);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+/* PAGE-LOGIN */
+.loginpage {
+    background-image: url("images/bg-gamepage.png");
+    backdrop-filter: blur(3px);
+    height: 100vh;
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.loginbox {
+    margin: 135px;
+    width: 37%;
+    animation: pulse 7s ease-in-out infinite;
+}
+
+.login-textwrapper {
+    position: absolute;
+    margin-top: 235px; 
+    padding: 60px 15px 15px 15px; 
+    height: auto; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 7s ease-in-out infinite;
+}
+
+.valid {
+    font-family: 'Avenir';
+    color: #722f10;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.invalid {
+    font-family: 'Avenir';
+    color: #722f10;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+@keyframes float {
+    0%{transform: translateY(0);}
+    50% {transform: translateY(-7px);}
+    100%{transform: translateY(0);}
+}
+
+#username {
+    font-family: 'Patrick Hand', sans-serif;
+    font-weight: 10000;
+    font-size: 30px;
+    -webkit-text-stroke: 1.5px #722f10;
+    color: white;
+    margin-left: 5px;
+}
+
+#usernamebox {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 370px;
+    height: 45px;
+    background: #ffe8d8;
+    border: 3px solid #b9a193;
+    border-radius: 17px;
+    font-family: 'Avenir';
+    font-size: large;
+    margin-top: 10px;
+}
+
+#submitbutton:hover {
+    filter: drop-shadow(0px 7px 7px #ecfb90);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#submitbutton {
+    margin-top: 5px; 
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-left: 117px;
+}
+
+#submitbutton img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*welcome here*/
+.welcomepage, .easylevelpage, .mediumlevelpage, .hardlevelpage {
+    background-image: url("images/bg-gamepage.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.messagebox-welcome {
+    position: absolute;
+    width: 55%;
+    margin-top: 70px;
+}
+
+.welcomemessage {
+    font-family: 'Patrick Hand', sans-serif;
+    color: #722f10;
+    font-size: 35px;
+    position: absolute;
+    margin-top: -525px;
+    margin-left: 520px;
+    margin-right: 230px;
+}
+
+.welcomeguy {
+    margin-top: 111px;
+    margin-left: 240px;
+    margin-right: -250px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50%) translateY(100%);
+    animation: popup 0.5s forwards;
+}
+
+@keyframes popup {
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.button-selectlevel {
+    position: absolute;
+    width: 13.6%;
+    margin-top: 250px;
+    margin-left: 210px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.button-resetdata {
+    position: absolute;
+    width: 13.4%;
+    margin-top: 250px;
+    margin-left: 450px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+
+
+
+/* PAGE-INFORMATION */
+.informationpage {
+    background-image: url("images/bg-infotop.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Avenir', sans-serif;
+    margin: 0;
+}
+
+.info-textwrapper {
+    background: #f9f3df;
+    color: #303030;
+    width: 100%;
+    margin-top: 32%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-intro {
+    color: #666666;
+    max-width: 870px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+i {
+    color: #e48172;
+}
+
+.info-textwrapper2 {
+    background: #f6f6f6;
+    width: 100%;
+    display: flex;
+}
+
+.earthguy {
+    width: 15%;
+    margin: 50px 70px 40px 160px;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    } 
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.objectives {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin-top: -50px;
+    margin-right: 160px;
+}
+
+.objectives-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.howtoplay-container {
+    background-image: url(images/bg-infobottom.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.howtoplaybox {
+    width: 70%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+.howtoplay {
+    font-family: 'Patrick Hand', sans-serif;
+    position: absolute;
+    color: #722f10;
+    font-size: 26px;
+    margin-top: 160px;
+    margin-left: -20px;
+    z-index: 3;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE - LEVELS*/
+.mypadappspage, .levelspage, .memberspage, .easyscorepage, .scorespage {
+    overflow: hidden;
+}
+
+.mypadappspage::before, .levelspage::before, .memberspage:before, .easyscorepage::before, .scorespage:before {
+    background-image: url("images/bg-gamepage.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    content: "";
+    inset: 0;
+    z-index: -2;
+}
+
+.mypadappspage::after, .levelspage::after, .memberspage:after, .easyscorepage:after, .scorespage:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* adjust the darkness here */
+    z-index: -1;
+}
+
+.mypadapps-container {
+    overflow: hidden;
+    animation: zoom 0.6s ease-out forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.mypadp1, .mypadp2, .mypadp3, .mypadp4 {
+    margin-top: 70px;
+    margin-left: 65px;
+    position: relative; /* Make it part of the stacking context */
+    z-index: 0; /* Lower than apps */
+}
+
+
+.mypadtime, .mypadlevel {
+    position: absolute;
+    z-index: 2;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 33px;
+    color: #faf3dc;
+    top: 100px;
+}
+
+.mypadtime {
+    left: 400px;
+}
+
+.mypadlevel {
+    left: 680px;
+}
+
+.levelsapp, .membersapp, .easyscoresapp {
+    position: absolute;
+    width: 10%;
+    z-index: 2; 
+    top: 190px;
+}
+.mediumscoresapp, .hardscoresapp {
+    position: absolute;
+    width: 10%;
+    z-index: 2; 
+    top: 410px;
+}
+
+.label-levels, .label-members, .label-scores-easy {
+    position: absolute;
+    z-index: 2;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 25px;
+    color: #faf3dc;
+    -webkit-text-stroke: 1.5px #722f10;
+    font-weight: 10000;
+    top: 345px;
+}
+
+.label-scores-medium, .label-scores-hard {
+    position: absolute;
+    z-index: 2;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 25px;
+    color: #faf3dc;
+    -webkit-text-stroke: 1.5px #722f10;
+    font-weight: 10000;
+    top: 565px;
+}
+
+.label-levels {
+    left: 470px;
+}
+
+.label-members {
+    left: 657px;
+}
+
+.label-scores-easy {
+    left: 868px;
+}
+
+.label-scores-medium {
+    left: 453px;
+}
+
+.label-scores-hard {
+    left: 663px;
+}
+
+.levelsapp {
+    left: 425px;
+}
+
+.membersapp {
+    left: 625px;
+}
+
+.easyscoresapp {
+    left: 825px;
+}
+
+.mediumscoresapp {
+    left: 425px;
+}
+
+.hardscoresapp {
+    left: 625px;
+}
+
+.levelsapp:hover {
+    filter: drop-shadow(0px 7px 7px #ebc879);
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.membersapp:hover {
+    filter: drop-shadow(0px 7px 7px #ed9ba3);
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.easyscoresapp:hover {
+    filter: drop-shadow(0px 7px 7px #b1ba8a);
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.mediumscoresapp:hover {
+    filter: drop-shadow(0px 7px 7px #bec3de);
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hardscoresapp:hover {
+    filter: drop-shadow(0px 7px 7px #e49886);
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button-mypadhome {
+    position: absolute;
+    width: 8%;
+    z-index: 3; 
+    top: 315px;
+    left: 1025px;
+}
+
+.button-mypadhome:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* LEVELS PAGE*/
+.levelspage {
+    font-family: 'Patrick Hand', sans-serif;
+    color: #722f10;
+}
+
+.label-mypad {
+    position: absolute;
+    z-index: 2;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 40px;
+    -webkit-text-stroke: 1.8px #722f10;
+    color: white;
+    top: 167px;
+    left: 450px;
+    margin-bottom: 10px;
+}
+
+.levels-container {
+    height: auto;
+    animation: zoom 0.6s ease-out forwards;
+}
+
+.easy-wrapper, .medium-wrapper, .hard-wrapper {
+    position: absolute;
+    background: #fcfaee;
+    border: 3px solid #bd6621; 
+    border-radius: 8px; 
+    z-index: 2;
+    width: 43%;
+    display: flex;
+    left: 387px;
+}
+
+.levels-wrapper {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 236px;
+    margin-bottom: 41px;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    font-family: 'Patrick Hand', sans-serif;
+}
+
+.easy-wrapper {
+    top: 0px;
+}
+
+.medium-wrapper {
+    top: 213px;
+}
+
+.hard-wrapper {
+    top: 426px;
+}
+
+.easyguy, .mediumguy, .hardguy {
+    width: 26%;
+    padding: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.levels-textwrapper {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 15px;
+}
+
+.levels-textwrapper ul{
+    margin: 0;
+    padding: 0;
+}
+
+.levels-textwrapper li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.level {
+    font-size: 19px;
+}
+
+.customer {
+    font-size: 18px;
+    background: #efefef;
+    border-radius: 5px;
+    width: 105%;
+}
+
+.guide {
+    margin-top: 2px;
+    font-size: 15px;
+    width: 102.5%;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.button-play {
+    font-size: 17px;
+    text-decoration: none;
+    color: #722f10;
+    background: #b8df99;
+    border: 2px solid #6f8313;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 6px;
+    text-align: center;
+    padding-bottom: 2px;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+
+.button-play:hover {
+    background: #a5c047;
+    border: 2px solid #6f8313;
+}
+
+
+
+
+
+
+
+/* MEMBERS PAGE */
+.memberspage {
+    font-family: 'Patrick Hand', sans-serif;
+    color: #722f10;
+}
+
+.members-container {
+    overflow: hidden;
+    animation: zoom 0.6s ease-out forwards;
+}
+
+.members-wrapper {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 236px;
+    margin-bottom: 41px;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    font-family: 'Patrick Hand', sans-serif;
+}
+
+.members-firstwrapper, .members-secondwrapper, .members-thirdwrapper, .members-fourthwrapper, .members-fifthwrapper, .members-sixthwrapper {
+    display: flex;
+    background-color: #fcfaee;
+    border: 3px solid #b44a42;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2; 
+    padding: 8px;
+    width: 42.3%;
+}
+
+.members-firstwrapper2, .members-secondwrapper2, .members-thirdwrapper2 {
+    display: flex;
+    background-color: #fcfaee;
+    border: 3px solid #112548;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2; 
+    padding: 8px;
+    width: 42.3%;
+}
+
+.members-introwrapper {
+    display: flex;
+    background-color: #fcfaee;
+    border: 3px solid #b44a42;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2; 
+    padding: 8px;
+    padding-left: 12px;
+    width: 42.3%;
+}
+
+.members-introwrapper {
+    top: 0px;
+    left: 385px;
+}
+
+.members-firstwrapper {
+    top: 155px;
+    left: 385px;
+}
+
+.members-secondwrapper {
+    top: 343px;
+    left: 385px;
+}
+
+.members-introwrapper2 {
+    top: 0px;
+    left: 385px;
+}
+
+.members-thirdwrapper {
+    top: 531px;
+    left: 385px;
+}
+
+.members-fourthwrapper {
+    top: 719px;
+    left: 385px;
+}
+
+.members-fifthwrapper {
+    top: 907px;
+    left: 385px;
+}
+
+.members-sixthwrapper {
+    top: 1095px;
+    left: 385px;
+}
+
+.profile {
+    width: 25%;
+    z-index: 2; 
+    padding-right: 20px;
+    padding-left: 2px;
+    animation: pulse 7s ease-in-out infinite;
+}
+
+.members-customer {
+    margin-left: 15px;
+}
+
+.members-username {
+    font-size: 30px;
+}
+
+.members-name {
+    font-size: 18px;
+    margin-top: -7px;
+    margin-bottom: 10px;
+}
+
+.starrating {
+    width: 25%;
+    height: 14%;
+    margin-bottom: 10px;
+}
+
+.members-hashtag {
+    font-size: 19px;
+}
+
+.members-message {
+    font-size: 30px;
+}
+
+.members-label {
+   font-size: 33px; 
+}
+
+.members-starrating {
+    width: 30%;
+    height: 10%;
+    margin-top: 48px;
+    margin-left: -188px;
+}
+
+.members-number {
+    font-size: 20px;
+    margin-top: 55px;
+    margin-left: 10px;
+}
+
+.members-pastry {
+    font-size: 22px;
+    margin-left: -278px;
+    margin-top: 90px;
+}
+
+.members-customer {
+    font-size: 22px;
+    margin-left: -268px;
+    margin-top: 90px;
+}
+
+.members-date {
+    color: #ebb1ae;
+    font-size: 22px;
+    margin-top: 90px;
+    margin-left: 15px;
+}
+
+.people {
+    border: 2.5px solid #a15654;
+    border-radius: 8px;
+    width: 40%;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* EASY LEVEL*/
+.easylevelpage {
+    overflow: hidden;
+}
+
+.easyguypage {
+    width: 23%;
+    margin-top: 272px;
+    margin-left: 290px;
+    transform: translateX(-50%) translateY(100%);
+    animation: popup 0.5s forwards;
+}
+
+.easylvlmessage {
+    font-family: 'Patrick Hand', sans-serif;
+    color: #722f10;
+    font-size: 35px;
+    position: absolute;
+    margin-top: -535px;
+    margin-left: 500px;
+    margin-right: 230px;
+}
+
+.messagebox-start-easy {
+    position: absolute;
+    width: 55%;
+    margin-top: 70px;
+    margin-left: -170px;
+}
+
+.button-start-easy {
+    margin-top: -280px;
+    margin-left: 310px;
+    width: 85%;
+}
+
+
+
+
+
+
+
+/* MEDIUM LEVEL*/
+.mediumlevelpage {
+    overflow: hidden;
+}
+
+.mediumguypage {
+    width: 32%;
+    margin-top: 137px;
+    margin-left: 200px;
+    transform: translateX(-50%) translateY(100%);
+    animation: popup 0.5s forwards;
+}
+
+.mediumlvlmessage {
+    font-family: 'Patrick Hand', sans-serif;
+    color: #722f10;
+    font-size: 35px;
+    position: absolute;
+    margin-top: -535px;
+    margin-left: 495px;
+    margin-right: 245px;
+}
+
+.messagebox-start-medium {
+    position: absolute;
+    width: 55%;
+    margin-top: 70px;
+    margin-left: -220px;
+}
+
+.button-start-medium {
+    width: 85%;
+    margin-top: -250px;
+    margin-left: 290px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* HARD LEVEL*/
+.hardlevelpage {
+    overflow: hidden;
+}
+
+.hardguypage {
+    width: 30.5%;
+    margin-top: 159px;
+    margin-left: 310px;
+    margin-right: 0px;
+    transform: translateX(-50%) translateY(100%);
+    animation: popup 0.5s forwards;
+}
+
+.hardlvlmessage {
+    font-family: 'Patrick Hand', sans-serif;
+    color: #722f10;
+    font-size: 35px;
+    position: absolute;
+    margin-top: -535px;
+    margin-left: 530px;
+    margin-right: 230px;
+}
+
+.messagebox-start-hard {
+    position: absolute;
+    width: 55%;
+    margin-top: 70px;
+    margin-left: -275px;
+}
+
+.button-start-hard {
+    margin-top: -255px;
+    margin-left: 335px;
+    width: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RETURN */
+.arrow {
+    position: absolute;
+    width: 3%;
+    z-index: 2; 
+    top: 175px;
+    left: 385px;
+}
+
+.arrow:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+.arrow-levels {
+    position: absolute;
+    width: 4%;
+    z-index: 2; 
+    top: 30px;
+    left: 50px;
+}
+
+.arrow-levels:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+
+.title2 {
+    position: fixed; 
+    width: 24%;
+    top: 37px;
+    left: 24px;
+    z-index: -1; 
+}
+
+.title2:hover {
+    transform: scale(1.08);
+    transition: transform 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* EASY SCORE */
+.pizzaguy-easy {
+    position: absolute;
+    top: 56.8%;
+    left: 38%;
+    width: 18%;
+}
+
+.button-hiscore {
+    width: 18.7%;
+    animation: pulse 2s ease-in-out infinite;
+    cursor: pointer;
+    position: absolute;
+    top: 118%;
+    left: 77%;
+    z-index: 100;
+}
+
+  
+
+  
+
+
+
+  /* SCORES */
+.scorespage {
+    font-family: 'Patrick Hand', sans-serif;
+    color: #722f10;
+}
+
+.scores-container {
+    overflow: hidden;
+    animation: zoom 0.6s ease-out forwards;
+}
+
+.scores-wrapper {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 236px;
+    margin-bottom: 41px;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    font-family: 'Patrick Hand', sans-serif;
+}
+
+.scores-firstwrapper {
+    display: flex;
+    background-color: #fcfaee;
+    border: 3px solid #47540a;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2; 
+    padding: 8px;
+    width: 42.3%;
+    height: 50%;
+}
+
+.scores-secondwrapper {
+    display: flex;
+    background-color: #fcfaee;
+    border: 3px solid #112548;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2; 
+    padding: 8px;
+    width: 42.3%;
+    height: 50%;
+}
+
+.scores-thirdwrapper {
+    display: flex;
+    background-color: #fcfaee;
+    border: 3px solid #bd6621;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2; 
+    padding: 8px;
+    width: 42.3%;
+    height: 50%;
+}
+
+.scores-introwrapper-easy {
+    display: flex;
+    background-color: #fcfaee;
+    border: 3px solid #47540a;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2; 
+    padding: 8px;
+    padding-left: 12px;
+    width: 42.3%;
+}
+
+.scores-introwrapper-medium {
+    display: flex;
+    background-color: #fcfaee;
+    border: 3px solid #112548;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2; 
+    padding: 8px;
+    padding-left: 12px;
+    width: 42.3%;
+}
+
+.scores-introwrapper-hard {
+    display: flex;
+    background-color: #fcfaee;
+    border: 3px solid #bd6621;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2; 
+    padding: 8px;
+    padding-left: 12px;
+    width: 42.3%;
+}
+
+.scores-introwrapper-easy, .scores-introwrapper-medium, .scores-introwrapper-hard {
+    top: 0px;
+    left: 385px;
+}
+
+.scores-firstwrapper, .scores-secondwrapper, .scores-thirdwrapper {
+    top: 155px;
+    left: 385px;
+}
+
+.scores-profile {
+    width: 30%;
+    z-index: 2; 
+    padding: 5px;
+    padding-right: 25px;
+    margin-left: -10px;
+    animation: pulse 7s ease-in-out infinite;
+}
+
+.scores-profile-hard {
+    width: 31%;
+    z-index: 2; 
+    padding: 5px;
+    padding-right: 25px;
+    margin-left: -10px;
+    animation: pulse 7s ease-in-out infinite;
+}
+
+.scores-username {
+    font-size: 30px;
+}
+
+.scores-name {
+    font-size: 18px;
+    margin-top: -7px;
+    margin-bottom: 10px;
+}
+
+.starrating {
+    width: 35%;
+    height: 14%;
+    margin-bottom: 10px;
+}
+
+.starrating-hard {
+    width: 93%;
+    height: 14%;
+    margin-bottom: 10px;
+}
+
+.scores-hashtag {
+    font-size: 21px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.scores-label {
+   font-size: 33px; 
+}
+
+.scores-starrating {
+    width: 30%;
+    height: 10%;
+    margin-top: 48px;
+    margin-left: -188px;
+}
+
+.scores-number {
+    font-size: 20px;
+    margin-top: 55px;
+    margin-left: 10px;
+}
+
+.scores-customer {
+    font-size: 22px;
+    margin-left: -259px;
+    margin-top: 90px;
+}
+
+.scores-date {
+    color: #ebb1ae;
+    font-size: 22px;
+    margin-top: 90px;
+    margin-left: 15px;
+}
+
+.scores-people-easy {
+    border: 2.5px solid #47540a;
+    border-radius: 8px;
+    width: 40%;
+    overflow: hidden;
+    margin-left: 67px;
+}
+
+.scores-people-medium {
+    border: 2.5px solid #112548;
+    border-radius: 8px;
+    width: 40%;
+    overflow: hidden;
+    margin-left: 67px;
+}
+
+.scores-people-hard {
+    border: 2.5px solid #bd6621;
+    border-radius: 8px;
+    width: 40%;
+    overflow: hidden;
+    margin-left: 67px;
+}
