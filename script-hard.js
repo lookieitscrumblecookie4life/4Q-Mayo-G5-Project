@@ -56,9 +56,6 @@ const initializePage = () => {
     if (highScore !== null) {
       scoreDisplay.classList.remove("hide");
       scoreDisplay.innerHTML = `<span>"${highScore} moves... Impressive—for a kid. But next time, try acting like a chef, not someone playing pretend."`;
-    } else {
-      scoreDisplay.classList.remove("hide");
-      scoreDisplay.innerHTML = `<span>"Croffles are a no-go. Get to the kitchen and try again."</span>`;
     }
   }
 };
